@@ -16,11 +16,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-
-      - name: Build
-        run: pnpm run build
+      - name: Install PNPM
+        run: npm i -g pnpm
+      - name: Install & Build
+        run: pnpm install --frozen-lockfile && pnpm run build
 
       # - name: CreateTag
       #   run git tag -a
