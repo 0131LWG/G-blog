@@ -6,7 +6,7 @@ export default defineConfig({
   title: "aehyok",
   description: "hello world",
   ignoreDeadLinks: true,
-  base: "/blog/",
+  base: "/G-blog/",
 
   head: [["link", { rel: "icon", type: "image/svg+xml", href: "logo.svg" }]],
   lastUpdated: true,
