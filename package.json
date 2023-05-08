@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/aehyok/blog.git",
+  "repository": "https://github.com/0131LWG/G-blog.git",
   "author": "aehyok",
   "license": "MIT",
   "scripts": {
@@ -17,7 +17,7 @@
     "axios": "^0.27.2",
     "release-it": "^15.6.0",
     "sass": "^1.58.3",
-    "vitepress": "^1.0.0-alpha.48",
+    "vitepress": "^1.0.0-alpha.75",
     "zx": "^7.1.1"
   }
 }
