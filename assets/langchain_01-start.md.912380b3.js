@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as e}from"./app.f4aabbaf.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"langchain/01-start.md","lastUpdated":1683548525000}'),r={name:"langchain/01-start.md"};function n(s,c,o,p,_,d){return a(),e("div")}const m=t(r,[["render",n]]);export{l as __pageData,m as default};
