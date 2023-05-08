@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.f4aabbaf.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"linux/config.md","lastUpdated":1683548525000}'),n={name:"linux/config.md"};function o(c,r,s,i,p,d){return t(),a("div")}const l=e(n,[["render",o]]);export{f as __pageData,l as default};
