@@ -5,18 +5,18 @@ title: Home
 
 hero:
   name: GUAN
-  text: 那个曾经的少年回来了
+  # text: 那个曾经的少年回来了
   tagline: Believe in yourself, there's nothing you can't do！
-  image:
-    src: /home.svg
-    alt: logo
+  # image:
+  #   src: /home.svg
+  #   alt: logo
   actions:
     - theme: brand
-      text: 更多详情
+      text: 我的日常记录
       link: /daily/
     - theme: alt
       text: 访问我的GitHub
-      link: https://github.com/aehyok
+      link: https://github.com/0131LWG
     - theme: alt
       text: 关于我
       link: /me/
@@ -33,7 +33,7 @@ features:
 ---
 
 <script setup>
-import middle from '../src/components/middle.vue'
+// import middle from '../src/components/middle.vue'
 </script>
 
-<middle />
+<!-- <middle /> -->
