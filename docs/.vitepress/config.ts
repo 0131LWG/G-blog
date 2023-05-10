@@ -3,8 +3,8 @@ import { text } from "stream/consumers"
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "GUAN",
-  description: "hello world",
+  title: "GUAN的博客",
+  // description: "hello world",
   ignoreDeadLinks: true,
   base: "/G-blog/",
   head: [["link", { rel: "icon", type: "image/svg+xml", href: "logo.jpg" }]],
@@ -16,6 +16,7 @@ export default defineConfig({
       { text: "我的笔记", link: "/daily/" },
       { text: "前端总结", link: "/webDeveloper/" },
       { text: "后端总结", link: "/serverDeveloper/" },
+      { text: "视频剪辑", link: "/aehyok/video/" },
       { text: "我的掘金", link: "https://juejin.cn/user/2928754707932103" },
       { text: "关于我", link: "/me/" }
     ],
@@ -49,6 +50,24 @@ export default defineConfig({
         {
           text: "mysql",
           items: [{ text: "mac重置密码", link: "/serverDeveloper/mysql/mac重置密码" }]
+        }
+      ],
+      "/aehyok/video/": [
+        {
+          text: "剪映教程",
+          link: "/aehyok/video/001/"
+        },
+        {
+          text: "视频剪辑完整流程",
+          link: "/aehyok/video/002/"
+        },
+        {
+          text: "抖音账号搭建",
+          link: "/aehyok/video/003/"
+        },
+        {
+          text: "抖音运营技巧",
+          link: "/aehyok/video/004/"
         }
       ]
     }
