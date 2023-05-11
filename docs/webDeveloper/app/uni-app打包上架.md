@@ -1,0 +1,4 @@
+- 打包 ipa 文件，上架 ios App Store 流程指南： https://zhuanlan.zhihu.com/p/66575901
+- 苹果 ios 开发者公司账号申请流程：https://zhuanlan.zhihu.com/p/63659302
+- 申请发布证书 Certificate、AppID、Profiles 文件：https://blog.csdn.net/belalds/article/details/84568973
+- 申请证书签名（csr）:https://help.apple.com/developer-account/#/devbfa00fef7

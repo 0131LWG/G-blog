@@ -30,13 +30,48 @@ export default defineConfig({
       "/daily/": [
         {
           text: "2023年每日笔记",
-          items: [{ text: "current", link: "/daily/2023-05" }]
+          items: [{ text: "2023-05", link: "/daily/2023-05" }]
         }
       ],
       "/webDeveloper/": [
         {
           text: "JavaScript积累",
-          items: []
+          items: [
+            {
+              text: "vue",
+              items: [
+                {
+                  text: "vue",
+                  items: [
+                    { text: "数据元配置和vxe-table结合", link: "/webDeveloper/vue/数据元配置和vxe-table结合" },
+                    { text: "vue ts和js混用", link: "/webDeveloper/vue/vue ts和js混用" }
+                  ]
+                }
+              ]
+            },
+            {
+              text: "react",
+              items: []
+            },
+            {
+              text: "javascript",
+              items: []
+            },
+            {
+              text: "app",
+              items: [
+                { text: ".keystore文件", link: "/webDeveloper/app/.keystore文件" },
+                { text: "uni-app打包上架", link: "/webDeveloper/app/uni-app打包上架" }
+              ]
+            },
+            {
+              text: "css",
+              items: [
+                { text: "像素密度", link: "/webDeveloper/css/像素密度" },
+                { text: "逻辑像素", link: "/webDeveloper/css/逻辑像素" }
+              ]
+            }
+          ]
         }
       ],
       "/serverDeveloper/": [
