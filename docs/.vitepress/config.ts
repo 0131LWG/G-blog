@@ -30,7 +30,7 @@ export default defineConfig({
       "/daily/": [
         {
           text: "2023年每日笔记",
-          items: [{ text: "2023-05", link: "/daily/2023-05" }]
+          items: [{ text: "2023-06", link: "/daily/2023-06" },{ text: "2023-05", link: "/daily/2023-05" }]
         }
       ],
       "/webDeveloper/": [
@@ -60,6 +60,7 @@ export default defineConfig({
             {
               text: "app",
               items: [
+                { text: "taro分离模式开发app(环境安装)", link: "/webDeveloper/app/taro分离模式开发app(环境安装)" },
                 { text: ".keystore文件", link: "/webDeveloper/app/.keystore文件" },
                 { text: "uni-app打包上架", link: "/webDeveloper/app/uni-app打包上架" }
               ]
