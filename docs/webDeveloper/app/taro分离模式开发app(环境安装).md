@@ -88,7 +88,7 @@ $ yarn android
 - 报错：error Failed to install the app. Make sure you have the Android development
   解决方案：https://www.jianshu.com/p/e4abcaf3aab3
   尝试后无果，查看安卓文件夹下的 local.properties 中 dir 为 C\:\\Users\\EDY\\AppData\\Local\\Android\\Sdk
-  和大部分在百度上的文章不同 Sdk 为小写，修改为小写后重新运行解决问题，但本地的路径确实是 Sdk 大写的,暂时未知原因
+  和大部分在百度上的文章不同 Sdk 为小写，修改为小写后重新运行解决问题，但本地的路径确实是 Sdk 大写的,此问题很可能还是和 java 版本有关，后面修改为 java 11 后修改为 Sdk 大写后也可以运行了
 
 - 报错：react-native ＜ 0.69 Exceptions.h:5:10: fatal error: ‘fbjni/fbjni.h‘ file not found
   解决方案：https://blog.csdn.net/weixin_42368597/article/details/127442626?spm=1001.2014.3001.5501
