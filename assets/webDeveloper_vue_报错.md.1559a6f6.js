@@ -1,0 +1,11 @@
+import{_ as s,o as a,c as n,O as e}from"./chunks/framework.fb7bb97b.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"webDeveloper/vue/报错.md","filePath":"webDeveloper/vue/报错.md","lastUpdated":1685585388000}'),o={name:"webDeveloper/vue/报错.md"},t=e(`<h2 id="问题一" tabindex="-1">问题一 <a class="header-anchor" href="#问题一" aria-label="Permalink to &quot;问题一&quot;">​</a></h2><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">报错：getActivePinia was called with no active Pinia. Did you forget to install pinia</span></span></code></pre></div><p>问题原因：1. 没有安装 pinia 2. 没有在 main.js 中引入 pinia 3. 没有在 main.js 中 use(pinia) 4. 再引入 pinia 前进行了调用 解决方案：主要只说第四点，代码如下：</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">在vue文件中引入pinia模块使用，不会立即执行调用，因为是在vue文件中，所以会等到vue文件被实例化时才会执行，此时pinia已经被安装，所以不会报错</span></span>
+<span class="line"><span style="color:#A6ACCD;">  在ts文件中引入pinia模块使用，立即执行调用，报错，原因为js执行顺序问题，ts文件会预编译，所以在引入pinia模块时，就会执行调用，此时pinia还没有被安装，所以会报错</span></span>
+<span class="line"><span style="color:#A6ACCD;">  import { useMock } from &quot;/common/hooks/useMock&quot;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  const { dc_getDictionaryListApi } = useMock()</span></span>
+<span class="line"><span style="color:#A6ACCD;">  如果在ts文件中调用要在具体的方法中调用，如下：</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  const load = async (node: any, resolve: (data: any[]) =&gt; void, code: string) =&gt; {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    const { dc_getDictionaryListApi } = useMock()</span></span>
+<span class="line"><span style="color:#A6ACCD;">    const res = await dc_getDictionaryListApi(code)</span></span>
+<span class="line"><span style="color:#A6ACCD;">    console.log(res)</span></span>
+<span class="line"><span style="color:#A6ACCD;">  }</span></span></code></pre></div>`,4),p=[t];function l(i,c,r,d,_,A){return a(),n("div",null,p)}const y=s(o,[["render",l]]);export{u as __pageData,y as default};
