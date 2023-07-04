@@ -317,7 +317,7 @@ sizes 就是指默认显示 128px, 如果视区宽度大于 360px, 则显示 340
 <html lang="en" manifest="index.manifest"></html>
 ```
 
-（2）在`cache.manifest`文件中编写需要离线存储的资源：
+（2）在 `cache.manifest` 文件中编写需要离线存储的资源：
 
 ```html
 CACHE MANIFEST #v0.11 CACHE: js/app.js css/style.css NETWORK: resourse/logo.png FALLBACK: / /offline.html
@@ -424,7 +424,7 @@ Canvas 是画布，通过 Javascript 来绘制 2D 图形，是逐像素进行渲
 
 ### 16. head 标签有什么作用，其中什么标签必不可少？
 
-<head> 标签用于定义文档的头部，它是所有头部元素的容器。<head> 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等。
+`<head>` 标签用于定义文档的头部，它是所有头部元素的容器。`<head>` 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等。
 
 文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等。绝大多数文档头部包含的数据都不会真正作为内容显示给读者。
 
