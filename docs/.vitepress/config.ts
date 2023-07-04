@@ -74,6 +74,32 @@ export default defineConfig({
               ]
             }
           ]
+        },
+        {
+          text: "前端面试",
+          items: [
+            { text: "「2022」高频前端面试题汇总之JavaScript篇（上）", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之JavaScript篇（上）/index" },
+            { text: "「2022」高频前端面试题汇总之JavaScript篇（下）", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之JavaScript篇（下）/index" },
+            { text: "「2022」高频前端面试题汇总之CSS篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之CSS篇/index" },
+            { text: "「2022」高频前端面试题汇总之HTML篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之HTML篇/index" },
+            { text: "「2021」高频前端面试题汇总之React篇（上）", link: "/webDeveloper/interview/「2021」高频前端面试题汇总之React篇（上）/index" },
+            { text: "「2021」高频前端面试题汇总之React篇（下）", link: "/webDeveloper/interview/「2021」高频前端面试题汇总之React篇（下）/index" },
+            { text: "「2022」高频前端面试题汇总之Vue篇（上）", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之Vue篇（上）/index" },
+            { text: "「2022」高频前端面试题汇总之Vue篇（下）", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之Vue篇（下）/index" },
+            { text: "「2022」高频前端面试题汇总之计算机网络篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之计算机网络篇/index" },
+            { text: "「2022」高频前端面试题汇总之代码输出结果篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之代码输出结果篇/index" },
+            { text: "「2022」高频前端面试题汇总之浏览器原理篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之浏览器原理篇/index" },
+            { text: "「2022」高频前端面试题汇总之前端性能优化篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之前端性能优化篇/index" },
+            { text: "「2022」高频前端面试题汇总之手写代码篇", link: "/webDeveloper/interview/「2022」高频前端面试题汇总之手写代码篇/index" },
+            { text: "二线城市某公司面试题", link: "/webDeveloper/interview/公司面试真题/二线城市某公司面试题" },
+            { text: "杭氧科技面试题", link: "/webDeveloper/interview/公司面试真题/杭氧科技面试题" },
+            { text: "互联网大厂面试题", link: "/webDeveloper/interview/公司面试真题/互联网大厂面试题" },
+            { text: "互联网大厂面试题2", link: "/webDeveloper/interview/公司面试真题/互联网大厂面试题2" },
+            { text: "绿盟科技面试题（react方向）", link: "/webDeveloper/interview/公司面试真题/绿盟科技面试题（react方向）" },
+            { text: "某大厂子公司面试题", link: "/webDeveloper/interview/公司面试真题/某大厂子公司面试题" },
+            { text: "外包公司面试题", link: "/webDeveloper/interview/公司面试真题/外包公司面试题" },
+            { text: "某大厂面试题", link: "/webDeveloper/interview/公司面试真题/index" }
+          ]
         }
       ],
       "/serverDeveloper/": [
