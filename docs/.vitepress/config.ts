@@ -45,7 +45,8 @@ export default defineConfig({
                   text: "vue",
                   items: [
                     { text: "数据元配置和vxe-table结合", link: "/webDeveloper/vue/数据元配置和vxe-table结合" },
-                    { text: "vue ts和js混用", link: "/webDeveloper/vue/vue ts和js混用" }
+                    { text: "vue ts和js混用", link: "/webDeveloper/vue/vue ts和js混用" },
+                    { text: "wujie搭建", link: "/webDeveloper/vue/wujie" }
                   ]
                 }
               ]
