@@ -48,3 +48,16 @@ Monorepo 管理方法论和依赖安全 https://blog.csdn.net/qq_21567385/articl
 《 turborepo v1.2.0 版本升级指南（–filter 过滤范围） 》
 
 https://blog.csdn.net/qq_21567385/article/details/125357074《 Monorepo 丝滑方法论：引用模块热更新 》
+
+monorepo 同时编译 vue2 和 vue3 项目 https://blog.axiu.me/vue2-and-vue3-build-in-monorepo/
+{
+"pnpm": {
+"packageExtensions": {
+"vue-template-compiler": {
+"peerDependencies": {
+"vue": "2.7.14"
+}
+}
+}
+}
+}
