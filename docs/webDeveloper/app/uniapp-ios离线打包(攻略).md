@@ -14,6 +14,7 @@
 3. [导入 App 资源](https://nativesupport.dcloud.net.cn/AppDocs/importfeproject/ios.html)
 4. [ios 模块配置](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/common.html)
 5. [打包发行](https://nativesupport.dcloud.net.cn/AppDocs/package/ios.html)
+6. [ios 启动页自定义](https://ask.dcloud.net.cn/article/id-37475__page-2#reply)
    以上的这些资料，基本可以完成离线打包，但还是会遇到一些问题，接下来会列举一些我遇到的问题
 
 #### 所需材料
@@ -76,6 +77,11 @@ if (!isAuth) {
 }
 ```
 
+### 离线打包自定义启动页
+
+首先是看这个文档"[ios 启动页自定义](https://ask.dcloud.net.cn/article/id-37475__page-2#reply)",下载附件然后看附件中的 readme.md 教程进行自定义修改
+修改后拖到项目根目录下，再根据"[uniapp 的离线打包流程](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/ios.html)"中的启动页配置即可
+
 ### 遇到的问题
 
 1. 在 App 提交审核是提示：你的 App 包含 NSUserTrackingUsageDescription，这表示它可能会请求追踪用户。要提交以供审核，请更新你的 App 隐私答复以注明从此 App 中收集的数据将用于追踪目的，或者更新你的 App 二进制文件并上传新的构建版本。
@@ -93,3 +99,11 @@ if (!isAuth) {
 4. 如果是在 product -> Archive 报错：Profile doesn't include the selected signing certificate.
    原因：如果在配置证书正常时，可能是钥匙串中有重复过期了证书<br/>
    解决方案：将钥匙串和本 app 有关的证书删除，重新导入后，重启 Xcode，重新打包即可
+
+5. ios 隐私 info.plist 配置
+   https://www.cnblogs.com/xiaohuizhenyoucai/p/17678763.html
+
+6. 报错：# [Xcode building for iOS Simulator, but linking in an object file built for iOS, for architecture 'arm64'](https://stackoverflow.com/questions/63607158/xcode-building-for-ios-simulator-but-linking-in-an-object-file-built-for-ios-f)
+
+   注：需要注意的是如果是真机调试是不需要加此选项的，只在模拟器运行时需要
+   ![alt text](image-3.png)
