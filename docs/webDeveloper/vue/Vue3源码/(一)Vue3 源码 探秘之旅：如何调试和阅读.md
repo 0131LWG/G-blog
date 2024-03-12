@@ -43,6 +43,24 @@
 两种调试的方式都可以使用，看个人喜好，在 mini-vue 中可以直接点击打印的源码位置，可以直接看到关键节点的源码
 ![alt text](image-5.png)
 
+### 三、首先我们要阅读源码需要知道 Vue3 和 Vue2 做了哪些提升
+
+1. 在 vue3 中项目管理使用了 monorepo 的代码管理方式，让我们来看看大致的目录吧
+   monorepo 的好处：
+
+- 每个 package 有个各自的 API、类型定义、测试
+- monorepo 的好处在于将模块拆分的更细化，职责划分更明确，模块之前的依赖关系也更明确
+- 开发人员更容易的约阅读、理解和查看所有源码模块，提高了维护性
+- package 下的库(如 reactivity)是可以独立的使用的，并不依赖于 vue，这样如果单独想要响应式的能力不需要引入整个 vue，减少引入包的体积
+
+2. 使用 TypeScript 进行开发(更好的类型推导)
+
+- Flow 静态类型检查工具，小成本在 js 代码上迁入（复杂类型无法推导）
+
+```js
+const propOptions: any = vm.$options.props;
+```
+
 ### 三、简单来个 Vue3 初始化过程看看
 
 1. 首先我们先看 mini-vue 源码，找到 packages\vue\example\helloWorld\main.js 可以看到 createApp(App).mount(rootContainer);是否似曾相识，没错这就是我们平常开发中所做的应用实例创建，然后接着向下看可以看到在 packages\runtime-dom\src\index.ts 中的 createApp 函数这里做了两件事情：创建渲染器和创建 App 实例，接下来我们就来一探究竟 ensureRenderer 中的 createApp
