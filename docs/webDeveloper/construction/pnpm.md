@@ -61,3 +61,5 @@ monorepo 同时编译 vue2 和 vue3 项目 https://blog.axiu.me/vue2-and-vue3-bu
 }
 }
 }
+
+tsc-alias

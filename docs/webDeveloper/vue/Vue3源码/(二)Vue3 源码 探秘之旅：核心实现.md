@@ -6,3 +6,7 @@
 
 - 如何渲染到 DOM 上
 - 数据变化如何重新渲染
+
+渲染步骤： 创建 vnode -> 渲染 vnode -> 生成 DOM
+
+vnode js 对象
