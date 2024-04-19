@@ -10,12 +10,21 @@ Gulp 是一个前端开发过程中的自动化构建工具，基于 Node.js 的
 
 在 Gulp 中，每个功能都被视为一个任务，如压缩 CSS 的任务或合并文件的任务，这些任务被写在一个叫做 gulpfile.js 的文件中。这个文件用于配置所有任务，其中导出的任务被称为公开任务，可以通过 gulp 命令直接调用，Gulp 是一个强大的工具，可以大大提高前端开发的工作效率
 
-## 2. Gulp 安装
+## 2. Gulp 可以做什么
+
+它是基于 Nodejs，自动化地完成 javascript、coffee、sass、less、html/image、css 等文件的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
+
+### 2.1 缺点
+
+- 不支持 tree-shaking、热更新、代码分割等；
+- gulp 对 js 模块化方案无能为力，只是对静态资源做流式处理，处理之后并未做有效的优化整合。
+
+## 3. Gulp 安装
 
 1. 必要环境：Node，npm, npx 这里就不在赘述如何安装
 2. 安装 gulp：npm install --save-dev gulp
 
-## 3. js 和 gulp
+## 4. js 和 gulp
 
 (1) 你可以使用 JavaScript 的知识来编写 gulpfile
 (2) 可以使用转译语言编写 gulpfile
@@ -23,7 +32,7 @@ Gulp 是一个前端开发过程中的自动化构建工具，基于 Node.js 的
 使用 Babel 则文件为 gulpfile.babel.js，然后安装 @babel/register 模块
 (3) gulpfile 可以分割为多个文件，将每个任务拆开，然后再导入带 gulpfile 中，这可以避免单个文件非常的大。
 
-## 4. 如何创建任务
+## 5. 如何创建任务
 
 gulp 任务都是异步 js 函数，接受错误回调，streams，promise，event emitter，子进程或可观察的函数（watch）,所以当你完成任务后需要返回的类型需要注意，这里给个简单的例子：
 
@@ -73,7 +82,7 @@ export.build = build;
 export.default = series(clean, build);
 ```
 
-### 4.1 一些常用的 api
+### 5.1 一些常用的 api
 
 (1) series 串行执行  
 (2) parallel 并行执行  
