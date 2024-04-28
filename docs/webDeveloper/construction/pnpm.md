@@ -63,3 +63,15 @@ monorepo 同时编译 vue2 和 vue3 项目 https://blog.axiu.me/vue2-and-vue3-bu
 }
 
 tsc-alias
+
+升级版本报错:Unable to find the global bin directory
+
+先执行 pnpm setup 找到目录
+pnpm setup
+
+设置环境变量
+$env:PNPM_HOME="C:\Users\EDY\AppData\Local\pnpm\"
+$env:PATH+=$env:PNPM_HOME
+
+升级
+pnpm add -g pnpm
